@@ -1,73 +1,38 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        bpc
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class>
+    <section class="splash">
+      <img class="splash__img" src="~/assets/img/home_splash.jpg" />
+      <div class="splash__frame">
+        <div class="splash__row">
+          <h2 class="splash__text--primary splash-text">Pro-bono Corporate Finance Advisory For:</h2>
+        </div>
+        <div class="splash__row">
+          <h2 class="splash__text--secondary splash-text">SMBs</h2>
+          <div class="splash__window">
+            <div class="window"></div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <footer-app></footer-app>
   </div>
 </template>
 
 <script>
-export default {}
+import Footer from "@/components/Footer";
+
+export default {
+  name: "Home",
+  head() {
+    return {
+      title: `Bellwood Partners | ${this.$options.name}`,
+    };
+  },
+  components: {
+    "footer-app": Footer,
+  },
+};
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

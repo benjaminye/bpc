@@ -1,0 +1,10 @@
+.window {
+  z-index: 200;
+
+  outline-style: solid;
+  outline-width: 0.6rem;
+  outline-color: $color-tertiary;
+  height: 7rem;
+  width: 11rem;
+  transform: perspective(300px) rotateY(35deg);
+}

@@ -1,0 +1,42 @@
+.logo-text {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 92.5%;
+}
+
+.menu-text {
+  font-family: "Philosopher", sans-serif;
+  font-size: 2.2rem;
+}
+
+.splash-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.footer {
+  &__logo-text {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 92.5%;
+  }
+  &__link-text {
+    font-family: "Libre Franklin";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+
+    text-decoration-line: underline;
+  }
+  &__rights-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+}

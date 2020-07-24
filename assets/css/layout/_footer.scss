@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  align-items: center;
+
+  background-color: $color-grey-light-1;
+
+  height: 8rem;
+  padding: 1rem 5rem 1rem 5rem;
+
+  &__logo {
+    margin-right: 10rem;
+    color: $color-primary;
+  }
+  &__link {
+    transition: color 0.1s ease-in-out;
+    &:not(:last-child) {
+      margin-right: 5rem;
+      color: $color-secondary;
+    }
+    &:hover {
+      color: $color-secondary-dark;
+    }
+  }
+  &__rights {
+    margin-left: auto;
+    color: $color-grey-dark-2;
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  padding: 2.5rem 5rem;
+  &__link {
+    display: flex;
+  }
+  &__logo-img {
+    align-self: center;
+    height: 7rem;
+    width: auto;
+  }
+  &__logo-text {
+    align-self: flex-end;
+    color: $color-white;
+    margin-left: 1.5rem;
+  }
+}

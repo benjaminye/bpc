@@ -1,0 +1,35 @@
+.splash {
+  height: 100vh;
+  width: 100%;
+
+  &__img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+  }
+  &__frame {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+
+    width: 60%;
+    margin: 0 auto;
+  }
+  &__text--primary {
+    color: $color-white;
+    text-transform: uppercase;
+  }
+  &__text--secondary {
+    margin-top: 1rem;
+    position: relative;
+    color: $color-white;
+    z-index: 201;
+  }
+  &__window {
+    position: relative;
+    top: -7rem;
+    left: -1.5rem;
+    opacity: 50%;
+  }
+}
