@@ -12,10 +12,10 @@
       href="#"
       class="footer__link type--libre-franklin type--xsmall type--secondary type--underline"
     >Join Us</a>
-    <a
-      href="#"
+    <nuxt-link
+      to="/contact"
       class="footer__link type--libre-franklin type--xsmall type--secondary type--underline"
-    >Contact Us</a>
+    >Contact Us</nuxt-link>
     <p
       class="footer__rights type--open-sans type--xsmall type--grey-dark-2"
     >© 2020 Bellwood Partners & Company. All rights reserved.</p>
