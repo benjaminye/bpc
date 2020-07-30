@@ -2,31 +2,46 @@
   <div>
     <nav class="nav">
       <header class="header">
-        <a href="#" class="header__link">
+        <nuxt-link to="/" class="header__link">
           <img
             src="~/assets/img/logo-light.svg"
             alt="Bellwood Partners Logo"
             class="header__logo-img"
           />
-          <h1 class="header__logo-text logo-text">
+          <h1 class="header__logo-text type-logo--large">
             Bellwood
             <br />Partners & Co
           </h1>
-        </a>
+        </nuxt-link>
       </header>
       <div class="menu">
         <div class="menu__column">
-          <a href="#" class="menu__column-item menu-text">Services</a>
+          <nuxt-link
+            to="/services/strategic-advisory"
+            class="menu__column-item type--philosopher type--white type--heading"
+          >Services</nuxt-link>
           <hr class="menu__column-divider" />
-          <a href="#" class="menu__column-item menu-text">Case Studies</a>
+          <nuxt-link
+            to="/cases"
+            class="menu__column-item type--philosopher type--white type--heading"
+          >Case Studies</nuxt-link>
         </div>
         <div class="menu__column">
-          <a href="#" class="menu__column-item menu-text">Insights</a>
+          <nuxt-link
+            to="/insights"
+            class="menu__column-item type--philosopher type--white type--heading"
+          >Insights</nuxt-link>
           <hr class="menu__column-divider" />
-          <a href="#" class="menu__column-item menu-text">About</a>
+          <nuxt-link
+            to="/about/mission"
+            class="menu__column-item type--philosopher type--white type--heading"
+          >About</nuxt-link>
         </div>
         <div class="menu__column">
-          <a href="#" class="btn-primary btn-primary--menu menu-text">Contact Us</a>
+          <nuxt-link
+            to="/contact"
+            class="menu__button btn-primary btn-primary--menu type--philosopher type--white type--heading"
+          >Contact Us</nuxt-link>
         </div>
       </div>
     </nav>

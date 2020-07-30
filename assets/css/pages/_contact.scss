@@ -1,0 +1,49 @@
+.contact {
+  &-splash {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 100%;
+  }
+  &-content {
+    min-height: 100vh;
+
+    &__address {
+      position: relative;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+
+      top: 50rem;
+      left: 30%;
+
+      @include respond(phone) {
+        left: 4rem;
+      }
+    }
+
+    &__office {
+      margin-bottom: 2rem;
+    }
+
+    &__name {
+    }
+
+    &__position {
+      margin-bottom: 1rem;
+    }
+
+    &__phone {
+      margin-bottom: 0;
+    }
+
+    &__email {
+    }
+  }
+  &__position {
+    margin-bottom: 1rem;
+  }
+}

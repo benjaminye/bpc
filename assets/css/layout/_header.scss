@@ -8,6 +8,10 @@
     align-self: center;
     height: 7rem;
     width: auto;
+
+    @include respond(phone) {
+      height: 5rem;
+    }
   }
   &__logo-text {
     align-self: flex-end;

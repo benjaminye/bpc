@@ -1,42 +1,101 @@
-.logo-text {
-  font-family: aktiv-grotesk, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
-  line-height: 92.5%;
-}
+.type {
+  // Logo Type
+  &-logo {
+    &--large {
+      font-family: aktiv-grotesk, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+      line-height: 92.5%;
+    }
+    &--small {
+      font-family: aktiv-grotesk, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 2rem;
+      line-height: 92.5%;
+    }
+  }
 
-.menu-text {
-  font-family: "Philosopher", sans-serif;
-  font-size: 2.2rem;
-}
+  // Font Families
+  &--philosopher {
+    font-family: "Philosopher", serif;
+  }
+  &--raleway {
+    font-family: "Raleway", sans-serif;
+  }
+  &--libre-franklin {
+    font-family: "Libre Franklin", sans-serif;
+  }
+  &--open-sans {
+    font-family: "Open Sans", sans-serif;
+  }
 
-.splash-text {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 6rem;
-}
-
-.footer {
-  &__logo-text {
-    font-family: aktiv-grotesk, sans-serif;
+  // Font Weight
+  &--thin {
+    font-weight: 200;
+  }
+  &--regular {
+    font-weight: 400;
+  }
+  &--medium {
     font-weight: 500;
-    font-style: normal;
-    font-size: 2rem;
-    line-height: 92.5%;
   }
-  &__link-text {
-    font-family: "Libre Franklin";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.4rem;
+  &--bold {
+    font-weight: 700;
+  }
 
-    text-decoration-line: underline;
-  }
-  &__rights-text {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
+  // Font Sizes
+  &--xsmall {
     font-size: 1.3rem;
+  }
+  &--small {
+    font-size: 1.5rem;
+  }
+  &--body {
+    font-size: 1.7rem;
+  }
+  &--subheading {
+    font-size: 2rem;
+  }
+  &--heading {
+    font-size: 2.5rem;
+  }
+  &--large {
+    font-size: 3rem;
+  }
+  &--xlarge {
+    font-size: 5rem;
+  }
+  &--display {
+    font-size: 6rem;
+  }
+
+  // Font Colours
+  &--primary {
+    color: $color-primary;
+  }
+  &--secondary {
+    color: $color-secondary;
+  }
+  &--tertiary {
+    color: $color-tertiary;
+  }
+  &--grey-dark {
+    color: $color-grey-dark;
+  }
+  &--grey-dark-2 {
+    color: $color-grey-dark-2;
+  }
+  &--white {
+    color: $color-white;
+  }
+  &--champaigne {
+    color: $color-champaigne;
+  }
+
+  //Font Decoration
+  &--underline {
+    text-decoration-line: underline;
   }
 }

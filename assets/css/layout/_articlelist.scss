@@ -1,0 +1,39 @@
+.search {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+  &__prompt {
+    margin-right: 3rem;
+  }
+  &__icon {
+    fill: $color-grey-dark-2;
+  }
+  &__input {
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    padding-bottom: 1px;
+
+    border-bottom: 2px solid $color-grey-dark-2;
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $color-orange;
+    }
+  }
+}
+
+.article-box {
+  margin-bottom: 5rem;
+  &__heading {
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+  &__body {
+    margin-top: 1.5rem;
+  }
+  &__info {
+    margin-top: 1rem;
+    color: $color-grey-dark-2;
+  }
+}

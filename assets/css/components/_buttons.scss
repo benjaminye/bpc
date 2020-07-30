@@ -1,9 +1,28 @@
 .btn-primary {
-  color: $color-white;
-
   outline-style: solid;
   outline-width: 2px;
   outline-color: white;
+
+  padding: 1rem 2rem;
+
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  :active {
+    color: $color-orange;
+    outline-color: $color-orange;
+  }
+
+  &--menu {
+    padding: 1.5rem 2.2rem;
+  }
+}
+.btn-secondary {
+  color: $color-primary;
+
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: $color-primary;
 
   padding: 1rem 2rem;
 

@@ -1,0 +1,20 @@
+.grid {
+  &__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+    row-gap: 4rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: auto;
+    }
+  }
+  &__item {
+    &-heading {
+      padding-bottom: 1rem;
+    }
+    &-body {
+      padding-bottom: 0.5rem;
+    }
+  }
+}

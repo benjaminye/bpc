@@ -1,10 +1,30 @@
 .window {
-  z-index: 200;
+  &__splash {
+    z-index: 200;
+    outline-style: solid;
+    outline-width: 0.6rem;
+    outline-color: $color-tertiary;
+    height: 7rem;
+    width: 11rem;
+    transform: perspective(300px) rotateY(35deg);
+    position: relative;
+    top: -7rem;
+    left: -1.5rem;
+    opacity: 50%;
+  }
+  &__submenu {
+    z-index: 200;
+    height: 6rem;
+    width: 9rem;
+    outline-style: solid;
+    outline-width: 0.6rem;
+    outline-color: $color-tertiary;
+    transform: perspective(1000px) rotateY(65deg);
+    position: relative;
+    top: -4.5rem;
+    left: -1.5rem;
+    opacity: 0%;
 
-  outline-style: solid;
-  outline-width: 0.6rem;
-  outline-color: $color-tertiary;
-  height: 7rem;
-  width: 11rem;
-  transform: perspective(300px) rotateY(35deg);
+    transition: all 0.1s ease-in;
+  }
 }

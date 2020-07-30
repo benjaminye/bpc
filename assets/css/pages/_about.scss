@@ -1,0 +1,62 @@
+.about {
+  min-height: 100vh;
+  padding-top: 24rem;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  padding-bottom: 10rem;
+
+  @include respond(tab-port) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.mission {
+  &-container {
+    width: 70%;
+    margin-top: 7rem;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    &-heading {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.leadership {
+  &-container {
+    width: 70%;
+    margin-top: 7rem;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+    &__heading {
+      margin-right: 2rem;
+    }
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &__link {
+      color: $color-secondary-light;
+      transition: color 0.1s ease-in;
+      &:hover,
+      :active {
+        color: $color-secondary;
+      }
+    }
+    &__divider {
+      margin: 0rem 2rem;
+      font-size: 2rem;
+    }
+  }
+}

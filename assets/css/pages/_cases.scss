@@ -1,0 +1,16 @@
+.cases {
+  &-page {
+    min-height: 100vh;
+  }
+  &-content {
+    padding-top: 5rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    padding-bottom: 10rem;
+
+    @include respond(phone) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

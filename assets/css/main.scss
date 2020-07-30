@@ -8,10 +8,15 @@
 
 @import "components/buttons";
 @import "components/window";
+@import "components/submenu";
+@import "components/section-divider";
+@import "components/grid";
 
 @import "layout/navigation";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/featured";
+@import "layout/articlelist";
 
 @import "pages/about";
 @import "pages/article";
@@ -19,3 +24,4 @@
 @import "pages/contact";
 @import "pages/index";
 @import "pages/insights";
+@import "pages/services";
