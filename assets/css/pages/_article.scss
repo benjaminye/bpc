@@ -4,6 +4,10 @@
   padding-left: 16rem;
   padding-right: 16rem;
   padding-bottom: 10rem;
+  @include respond(tab-land) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   &__redirect {
     transition: color 0.1s ease-in;
 
@@ -22,5 +26,10 @@
     padding-left: 12rem;
     padding-right: 12rem;
     padding-bottom: 3rem;
+
+    @include respond(tab-port) {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
   }
 }

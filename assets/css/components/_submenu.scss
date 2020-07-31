@@ -27,6 +27,9 @@
       .window__submenu {
         opacity: 90%;
         transform: perspective(300px) rotateY(35deg);
+        @include respond(tab-land) {
+          transform: perspective(0) rotateY(0);
+        }
       }
     }
   }

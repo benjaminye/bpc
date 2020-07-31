@@ -19,7 +19,7 @@ import menuItems from "~/static/store/menu-services.json";
 import gridItems from "~/static/store/grid-strategic.json";
 
 export default {
-  name: "Services - Strategic Advisory",
+  name: "stratadvisory",
   head() {
     return {
       title: `BPC | Strategic Advisory`,

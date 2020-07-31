@@ -15,5 +15,8 @@
 .page-enter, .page-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(20px) rotateY(20deg) perspective(500px);
+  @include respond(tab-land) {
+    transform: translateX(0) rotateY(0) perspective(0);
+  }
   opacity: 0;
 }
