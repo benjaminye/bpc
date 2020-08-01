@@ -18,10 +18,18 @@
   }
   &__text--primary {
     text-transform: uppercase;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
   &__text--secondary {
     margin-top: 1rem;
     position: relative;
     z-index: 201;
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
   }
 }

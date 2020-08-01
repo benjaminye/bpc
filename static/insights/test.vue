@@ -1,18 +1,16 @@
 <template>
   <div>
-    <h1 class="article-heading">
-      Test Blog Post
-    </h1>
-    <h2 class="article-author-date">
-      By Anonymous | July 25th, 2020
-    </h2>
-    <h3 class="article-subheading">
+    <h1 class="article__heading type--raleway type--bold type--large type--primary">Test Blog</h1>
+    <h2
+      class="article__author type--philosopher type--regular type--subheading type--grey-dark"
+    >By Anonymous | July 25th, 2020</h2>
+    <h3 class="article__subheading type--raleway type--regular type--subheading type--secondary">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus faucibus
       tempor posuere urna vulputate vitae nibh turpis magna. Volutpat, tellus
       nunc dignissim ullamcorper viverra. Ridiculus enim sed duis nam nec.
       Mauris amet, aliquet et, enim vulputate lacus, odio at.
     </h3>
-    <p class="article-text">
+    <p class="article__body type--open-sans type--regular type--body type--primary">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. In egestas erat
       imperdiet sed euismod. Lectus nulla at volutpat diam ut venenatis tellus
@@ -29,8 +27,8 @@
       lobortis elementum nibh tellus molestie. Pulvinar sapien et ligula
       ullamcorper. Vulputate ut pharetra sit amet aliquam id diam maecenas
       ultricies. Tincidunt tortor aliquam nulla facilisi cras fermentum.
-      <br /><br />
-      Ultrices in iaculis nunc sed augue. Adipiscing bibendum est ultricies
+      <br />
+      <br />Ultrices in iaculis nunc sed augue. Adipiscing bibendum est ultricies
       integer quis. Fermentum odio eu feugiat pretium nibh. Est ullamcorper eget
       nulla facilisi etiam dignissim diam. Congue mauris rhoncus aenean vel.
       Adipiscing elit ut aliquam purus sit amet luctus. Viverra orci sagittis eu
@@ -51,8 +49,8 @@
       sapien faucibus. Mi bibendum neque egestas congue quisque egestas diam in.
       Facilisi nullam vehicula ipsum a arcu cursus vitae. Faucibus in ornare
       quam viverra orci sagittis eu. Lorem ipsum dolor sit amet consectetur.
-      <br /><br />
-      Commodo ullamcorper a lacus vestibulum sed arcu. Diam ut venenatis tellus
+      <br />
+      <br />Commodo ullamcorper a lacus vestibulum sed arcu. Diam ut venenatis tellus
       in. Cursus sit amet dictum sit amet. Sapien pellentesque habitant morbi
       tristique senectus et netus et malesuada. Nunc faucibus a pellentesque sit
       amet porttitor eget dolor morbi. Pretium quam vulputate dignissim
@@ -76,3 +74,4 @@
     </p>
   </div>
 </template>
+

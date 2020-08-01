@@ -13,9 +13,13 @@
   display: flex;
   justify-content: space-between;
 
+  transition: all 0.3s ease-in-out;
+
   @include respond(phone) {
     flex-direction: column;
     top: 0;
+    max-height: 9.5rem;
+    overflow: hidden;
   }
 }
 
@@ -27,6 +31,7 @@
   @include respond(phone) {
     align-self: center;
     justify-content: space-around;
+    flex-direction: column;
   }
 
   &__column {
@@ -62,7 +67,86 @@
   }
   &__button {
     @include respond(phone) {
-      display: none;
+      margin-bottom: 3rem;
     }
+  }
+}
+
+.burger-menu {
+  &__label {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 1000000;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+  &__checkbox {
+    display: none;
+    position: fixed;
+    top: 3.9rem;
+    right: 3rem;
+
+    // color: none;
+    // background-color: red;
+
+    z-index: 1000000;
+    &:checked ~ .nav {
+      max-height: 50rem;
+    }
+    &:checked + .burger-menu__label .burger-menu__icon span {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        top: -3px;
+        left: 8px;
+      }
+      &:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 39px;
+        left: 8px;
+      }
+    }
+  }
+}
+
+.burger-menu__icon {
+  width: 60px;
+  height: 45px;
+  position: relative;
+
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  & span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $color-white;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  & span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  & span:nth-child(2) {
+    top: 18px;
+    transform-origin: left center;
+  }
+  & span:nth-child(3) {
+    top: 36px;
+    transform-origin: left center;
   }
 }
